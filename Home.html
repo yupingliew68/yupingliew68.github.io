@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/Users/LiewYuPing/Downloads/Lugia/image/logo lugia.png">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    position:relative;
+    top:100px;   
+    width:100%;
+    height:200px;
+    margin-top: 20px;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: url("some\ random\ guy.png");
+    background-repeat: no-repeat;
+    
+}
+a{
+    position: relative;
+    top:10%;
+    left:39%;
+    font-size:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background2{
+     background-color: rgba(0,0,0,0.5);
+     position:relative;
+     top:80vh;
+     left:0px;
+}
+.Navigation{
+    position: relative;
+    background-color: white;
+    border-bottom: 3px solid black; 
+    top:10%;
+    width:100%;
+    padding:50px;
+    font-size:50px;
+    
+}
+.Navigation a{
+position:relative;
+left:40.21447721179624vh;
+background-color: white;
+
+line-height: 200%;
+}
+.Navigation img{
+    position:relative;
+    top:30px;
+    width:15vw;
+    height:15vh;
+    min-width:1.3020833333333333vw;
+}
+
+
+.header{
+    border-style:solid;
+    background-color:lightskyblue;
+    
+}
+.icon{
+    position:relative;
+    border-style:solid;
+    border-radius: 50%;
+    border-width: 5px;
+    transform:translate(-50%,50%);
+    clip-path: circle();
+    top:-200px;
+    left: 50%;
+    width: 400px;
+    height:400px;
+    min-width:400px;
+    margin-top: 50px;
+}
+.icon img{
+    width:110%;
+    position:absolute;
+    top:-40%;
+    left: -6%;
+    margin-top: 170px;
+}
+
+.mainpage{
+background-color:aliceblue;
+cursor:pointer;
+
+}
+
+#Homedisplay{
+    display:none;
+}
+
+ .Home{
+    border-radius: 1.3020833333333333vw;
+    height:45px;
+    width: 100px;
+    font-family:'Source Sans Pro ';
+    position: absolute;
+    font-weight: bold;
+    background:white;
+    font-size: 2.25rem;
+    border-style:solid;
+    padding: 3px 4px 3px 9px;
+    margin-top: 10px;
+    top: 50px;
+    left: 33.5%;
+
+  
+ }
+ .Home:hover,.active{
+    color:purple;
+ }
+ #Homedisplay:checked + label{
+        display:block;
+    }
+#Destinationdisplay{
+    display:none;
+}
+.Destination{
+    border-radius: 1.3020833333333333vw;
+    height:40px;
+    width: 170px;
+    font-family:'Source Sans Pro ';
+    font-weight: bold;
+    position: absolute;
+    background:white;
+    font-size:2.25rem;
+    border-style:solid;
+    padding: 3px 4px 3px 9px;
+    top:120px;
+    left:30%;
+ }
+ .Destination:hover,.active{
+    color:purple;
+ }
+ #Destinationdisplay:checked + label{
+        display:block;
+    }
+
+#Aboutdisplay{
+    display:none;
+}
+.About{
+    border-radius: 1.3020833333333333vw;
+    height: 45px;
+    width: 100px;
+    font-family:'Source Sans Pro ';
+    font-weight: bold;
+    position: absolute;
+    background:white;
+    font-size: 2.25rem;
+    border: 2.5px solid;
+    text-align: center;
+    padding: 3px 5px;
+    top:175px;
+    left:32%;
+ }
+ .About:hover,.active{
+    color:purple;
+ }
+ #Aboutdisplay:checked + label{
+        display:block;
+    }
+
+#Contactdisplay{
+    display:none;
+}
+.Contact{
+    border-radius: 1.3020833333333333vw;
+    height:50px;
+    width: 130px;
+    font-family:'Source Sans Pro ';
+    font-weight: bold;
+    font-size: 2.25rem;
+    position: absolute;
+    background:white;
+    text-align: center;
+    border-style:solid;
+    top:240px;
+    left:32.5%;
+    
+ }
+ .Contact:hover,.active{
+    color:purple;
+ }
+ #Contactdisplay:checked + label{
+        display:block;
+    }
+#Logindisplay{
+    display:none;
+}
+.Login{
+    border-radius: 1.3020833333333333vw;
+    height:40px;
+    width: 100px;
+    font-family:'Source Sans Pro ';
+    font-weight: bold;
+    position: absolute;
+    background:white;
+    font-size:2.25rem;
+    border-style:solid;
+    padding: 3px 9px 3px 9px;
+    top:300px;
+    left:34.5%;
+ }
+ .Login:hover,.active{
+    color:purple;
+ }
+
+#Logindisplay{
+    display:none;
+}
+
+#Attractiontdisplay{
+    display:none;
+}
+.Attraction{
+    border-radius: 1.9vw;
+    height: 45px;
+    width: 200px;
+    margin-left:
+    font-family:'Source Sans Pro ';
+    font-weight: bold;
+    position: absolute;
+    background:white;
+    font-size: 2.25rem;
+    border: 2.5px solid;
+    text-align: center;
+    padding: 3px 5px;
+    top:175px;
+    left:60%;
+ }
+ .Attraction:hover,.active{
+    color:purple;
+ }
+ #Attractiondisplay:checked + label{
+        display:block;
+    }
+
+    #Attractiontdisplay{
+    display:none;
+}
+.Inspiration{
+    border-radius: 1.9vw;
+    height: 45px;
+    width: 200px;
+    margin-top: 70px;
+    font-family:'Source Sans Pro ';
+    font-weight: bold;
+    position: absolute;
+    background:white;
+    font-size: 2.25rem;
+    border: 2.5px solid;
+    text-align: center;
+    padding: 3px 5px;
+    top:175px;
+    left:60%;
+ }
+ .Inspiration:hover,.active{
+    color:purple;
+ }
+ #Inspirationdisplay:checked + label{
+        display:block;
+    }
+
+    .Cruises{
+    border-radius: 1.9vw;
+    height: 45px;
+    width: 200px;
+    margin-top: 130px;
+    font-family:'Source Sans Pro ';
+    font-weight: bold;
+    position: absolute;
+    background:white;
+    font-size: 2.25rem;
+    border: 2.5px solid;
+    text-align: center;
+    padding: 3px 5px;
+    top:175px;
+    left:60%;
+ }
+ .Cruises:hover,.active{
+    color:purple;
+ }
+ #Cruisesdisplay:checked + label{
+        display:block;
+    }
+
+.content2{
+    position:relative;
+    background-color:rgba(240, 248, 255,0.7);
+    top: 67.02412868632707vh;
+    left:32.552083333333336vw;
+    text-align: center;
+    width:500px;
+
+}
+h1{
+        position: relative;
+        font-size: 7.037533512064343vh;
+        font-family: 'MV Boli';
+        padding:0 10px;
+    }
+.content3{
+    position: relative;
+    top:80vh;
+    left:20vw;
+    background:rgba(240, 248, 255,0.7);
+    width:58.59375vw;
+}
+p{
+        font-size: 3.351206434316354vh;
+        font-family: 'Arial';
+        padding:1.3020833333333333vw;
+        
+    }
+.slideshow{
+    max-width:1000px;
+    position:relative;
+    margin:auto;
+    top:100.53619302949062vh;
+}
+.previous,.next{
+    cursor:pointer;
+    position:absolute;
+    top:500px;
+    width:auto;
+    padding:16px;
+    margin-top: -22px;
+    color:white;
+    font-weight: bold;
+    font-size:18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition:  0.6s ease;
+
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.slidepreview{
+    display:none;
+}
+.content4{
+    position:relative;
+    top: 87.23860589812332vh;
+    left:  34vw;
+    background:rgba(240, 248, 255,0.7);
+    text-align: center;
+    width:500px;
+}
+h2{
+    font-size:  7.037533512064343vh;
+    padding:0 10px;
+    font-family: 'MV Boli';
+}
+iframe{
+    position:relative;
+    top: 134.04825737265415vh;
+    left: 9.765625vw;
+    width: 60%;
+    height: 600px;
+    background-color: rgba(0,0,0,0.5);
+    padding:0px 150px ;
+}
+.content5{
+    position:relative;
+    top: 120.64343163538874vh;
+    left: 39.0625vw;
+    background:rgba(240, 248, 255,0.7);
+    width:350px;
+}
+h3{
+    font-size:  7.037533512064343vh;
+    padding:0 10px;
+    font-family: 'MV Boli';
+}
+iframe.iframe2{
+    position:relative;
+    top:160vh;
+    background:none; 
+    left: 10%;
+    
+}
+.content6{
+    position:relative;
+    top: 147.45308310991956vh;
+    left:  35.807291666666664vw;
+    background:rgba(240, 248, 255,0.7);
+    width: 450px;
+}
+h4{
+  
+    font-size: 7.037533512064343vh;
+    padding:0 10px;
+    font-family: 'MV Boli';
+
+}
+.background3{
+     background-color: rgba(0,0,0,0.5);
+     color:white;
+     font-size: 8vh;
+     text-align: center;
+     font-family:"Helvatica";
+     position:relative;
+     width:100%;
+     top:158.5vh;
+     left:0vw;
+}
+.hoodie{
+    position:relative;
+    left: 32.552083333333336vw;
+    
+}
+@media screen and (min-width: 600px) {
+  div.viewport {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.viewport {
+    font-size: 30px;
+  }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+}
+
+.nav navbar-nav {
+    font-size: 12px;
+}
+</style>
+<title>Lugia</title><link rel="icon" type="image/x-icon" href="/Users/LiewYuPing/Downloads/Lugia/image/logo lugia.png"></head>
+
+    
+<body>
+  <div class="Navigation">
+    
+    <img onclick="window.location.href=&#39;index.html&#39;" src="/Users/LiewYuPing/Downloads/Lugia/image/logo lugia.png" width="200px" height="80%" alt="icon for lugia air">
+    <a>Lugia</a>
+
+  </div>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Customized Navigation Bar</title>
+        <style>
+            /* Target the <a> elements inside the .navbar-nav class */
+            .navbar-nav a {
+                font-size: 14px;
+                margin: 0 10px; /* Add left and right margin to create space between links */
+            }
+    
+            /* Target the <a> elements inside the .navbar-brand class */
+            .navbar-brand {
+                font-size: 18px;
+                margin-right: 20px; /* Add right margin to separate the brand from the links */
+            }
+    
+            /* Add some padding to the navigation links to increase clickable area */
+            .navbar-nav li {
+                padding: 10px 0;
+            }
+    
+            /* Add some margin to the dropdown menu to separate it from the parent link */
+            .navbar-nav .dropdown-menu {
+                margin-top: 8px;
+            }
+    
+            /* Add your other CSS styles here if needed */
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">DESTINATION <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">DOMESTIC</a></li>
+                            <li><a href="#">INTERNATIONAL</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ATTRACTION</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+    </html>
+    
+
+ <div class="container">
+    <div class="icon">
+        <img src="/Users/LiewYuPing/Downloads/Lugia/image/aircraft-airplane-airline-logo-label-journey-air-travel-airliner-symbol-vector-illustration.jpg" alt="icon">
+    </div>
+    <label class="Home" for="HomeControl" onclick="window.location.href=&#39;Home.html&#39;">
+        Home
+        </label>
+    
+    <label class="Destination" for="Destinationdisplay" onclick="window.location.href=&#39;Destination.html&#39;">
+       Destination
+    </label>
+
+    <label class="About" for="Aboutdisplay" onclick="window.location.href=&#39;About.html&#39;">
+        About
+    </label>
+    
+    <label class="Contact" for="Contactdisplay" onclick="window.location.href=&#39;Contact.html&#39;">
+        Contact
+    </label>
+
+    <label class="Login" for="Logindisplay" onclick="window.location.href=&#39;login.html&#39;">
+        Login
+    </label>
+
+    <label class="Attraction" for="Attractiondisplay" onclick="window.location.href=&#39;attraction.html&#39;">
+        Attraction 
+    </label>
+
+    <label class="Inspiration" for="Inspirationdisplay" onclick="window.location.href=&#39;inspiration.html&#39;">
+        Inspiration
+    </label>
+
+    <label class="Cruises" for="Cruisesdisplay" onclick="window.location.href=&#39;Cruises.html&#39;">
+        Cruises
+    </label>
+
+    
+    
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function addSlides(a) {
+    showSlides(slideIndex += a);
+}
+function currentSlides(a){
+    showSlides(slideIndex = a);
+}
+function showSlides(a){
+    let i;
+    let slides = document.getElementsByClassName("slidepreview");
+    let dots = document.getElementsByClassName("dot");
+  if (a > slides.length) {slideIndex = 1}    
+  if (a < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+</body></html>
